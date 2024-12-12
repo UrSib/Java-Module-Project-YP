@@ -37,29 +37,3 @@ public class Main {
 
 
 }
-
-class Auto {
-
-    String brand;
-    int speed;
-
-    Auto(String brand, int speed) {
-
-        this.brand = brand;
-        this.speed = speed;
-    }
-}
-
-class Leader {
-
-    String leader = "";
-    int distanceLeader = 0;
-
-    void identifyLeader(int speed, String brand) {
-        int distance = speed * 24;
-        if (distance > distanceLeader) {
-            distanceLeader = distance;
-            leader = brand;
-        }
-    }
-}
